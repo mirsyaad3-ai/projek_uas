@@ -1,0 +1,163 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #f4f6f8;
+}
+
+nav {
+  background: #111;
+  padding: 15px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav h2 {
+  color: white;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav ul li {
+  margin-left: 20px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  color: #00bcd4;
+}
+
+.container {
+  padding: 40px;
+}
+
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+button {
+  padding: 10px 20px;
+  background: #00bcd4;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #0097a7;
+}
+.card {
+  margin-bottom: 30px;
+}
+/* PROFILE HEADER */
+.profile-header {
+  background: #f0efec;
+}
+
+.profile {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+
+.profile-info h1 {
+  font-size: 32px;
+}
+
+.profile-info h3 {
+  color: #1abc9c;
+  margin: 10px 0;
+}
+
+.profile-info ul {
+  list-style: none;
+  margin-top: 20px;
+}
+
+.profile-info li {
+  margin-bottom: 8px;
+}
+
+/* RESPONSIVE PROFILE */
+@media (max-width: 768px) {
+  .profile {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+/* PROJECT IMAGE */
+.project-card img {
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.project-card img:hover {
+  transform: scale(1.05);
+}
+
+/* MODAL IMAGE */
+.modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.8);
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.modal img {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 15px;
+}
+/* FOTO PROFILE DENGAN GARIS HITAM */
+.profile img {
+  width: 260px;
+  height: 320px;
+  object-fit: cover;
+  border-radius: 20px;
+  border: 5px solid #000;   /* GARIS HITAM */
+  background: #fff;
+}
+.photo-frame {
+  border: 5px solid #000;
+  border-radius: 22px;
+  padding: 6px;
+  background: #f0efec;
+}
+
+.photo-frame img {
+  width: 250px;
+  height: 310px;
+  object-fit: cover;
+  border-radius: 16px;
+}
+@media (max-width: 768px) {
+  .profile img,
+  .photo-frame img {
+    width: 200px;
+    height: 260px;
+  }
+}

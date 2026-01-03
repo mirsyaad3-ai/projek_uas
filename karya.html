@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Karya & Project</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+  <h3>irsyaad</h3>
+  <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+  <ul id="menu">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="profile.html">Profile</a></li>
+    <li><a href="informasi.html">Informasi</a></li>
+    <li><a href="karya.html">Karya & Project</a></li>
+    <li><a href="media.html">Media</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+
+<section>
+  <div class="title">
+    <h1>Karya & Project</h1>
+    <p>Beberapa project yang pernah saya buat</p>
+  </div>
+
+  <div class="cards">
+
+    <div class="card project-card">
+      <img src="tabel data mahasiswa.png" onclick="openImage(this.src)">
+      <h3>Tabel Data Mahasiswa</h3>
+    </div>
+
+    <div class="card project-card">
+      <img src="tabel nilai.png" onclick="openImage(this.src)">
+      <h3>tabel nilai</h3>
+    </div>
+
+    <div class="card project-card">
+      <img src="form pendaftaran.png" onclick="openImage(this.src)">
+      <h3>Form Pendaftaran</h3>
+    </div>
+
+  </div>
+</section>
+
+<!-- MODAL FOTO -->
+<div id="imageModal" class="modal" onclick="closeImage()">
+  <img id="modalImg">
+</div>
+<footer>
+  © muhammad irsyaad 
+</footer>
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+  <h3>irsyaad</h3>
+  <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+  <ul id="menu">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="profile.html">Profile</a></li>
+    <li><a href="informasi.html">Informasi</a></li>
+    <li><a href="karya.html">Karya & Project</a></li>
+    <li><a href="media.html">Media</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+
+<div class="container">
+    <div class="card">
+  <h1>Contact</h1>
+
+  <form onsubmit="return validateForm()">
+    <label>Nama</label><br>
+    <input type="text" id="nama"><br><br>
+
+    <label>Email</label><br>
+    <input type="email" id="email"><br><br>
+
+    <label>Pesan</label><br>
+    <textarea id="pesan"></textarea><br><br>
+
+    <button type="submit">Kirim</button>
+  </form>
+</div>
+
+    <h1>Contact</h1>
+    <p>Email: irsyaad@email.com</p>
+    <p>No HP: 081295890972</p>
+  </div>
+</div>
+<footer>
+  © muhammad irsyaad
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
